@@ -1,0 +1,30 @@
+{
+  "name": "xVault",
+  "version": "3.0.1",
+  "description": "xVault is an XRP wallet",
+  "main": "electron-start.js",
+  "author": "xVault Developers",
+  "license": "GPL-2.0-only",
+  "devDependencies": {
+    "electron": "^1.6.2",
+    "electron-builder": "^22.11.7"
+  },
+  "build": {
+    "appId": "xvault.dev",
+    "linux": {
+      "category": "Office",
+      "icon": "icons",
+      "target": [
+        "deb"
+      ],
+      "maintainer": ""
+    },
+    "win": {
+      "target": "portable",
+      "icon": "icons/256x256.png"
+    }
+  },
+  "dependencies": {
+    "node.js": "^0.0.1-security"
+  }
+}

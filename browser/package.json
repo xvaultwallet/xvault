@@ -1,0 +1,51 @@
+{
+  "name": "xVault",
+  "version": "3.0.6",
+  "description": "xVault is an XRP wallet licensed under the GNU General Public License version 2.0",
+  "main": "electron-start.js",
+  "author": "xVault Developers",
+  "license": "GPL-2.0-only",
+  "homepage": "http://www.xVault.dev",
+  "devDependencies": {
+    "electron": "^15.0.0",
+    "electron-builder": "^22.11.7"
+  },
+  "build": {
+    "appId": "xvault.dev",
+    "linux": {
+      "category": "Internet",
+      "icon": "icons",
+      "target": [
+        "deb"
+      ],
+      "maintainer": "xVault.dev <www.xvault.dev>"
+    },
+    "deb": {
+      "depends": [
+        "gconf2"
+      ]
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "icons/256x256.png"
+    },
+    "nsis": {
+      "license": "docs/LICENSE.txt",
+      "installerSidebar": "icons/nsis-sidebar.bmp",
+      "oneClick": false,
+      "perMachine": true,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true
+    },
+    "mac": {
+      "target": "pkg",
+      "category": "public.app-category.finance",
+      "icon": "icons/512x512.png",
+      "minimumSystemVersion": "10.15"
+    },
+    "pkg": {
+      "license": "docs/LICENSE.txt",
+      "welcome": "installer-resources/welcome.txt"
+    }
+  }
+}

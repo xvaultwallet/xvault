@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "xVault Wallet",
+  "short_name": "xVault Wallet",
+  "version": "net.xvault.core",
+  "description": "xVault Wallet is an XRP wallet for Android, iOS, Linux, Windows & Mac.",
+  "author": "xVault",
+  "icons": ["images/xvault.png"],
+  "start_url": "index.html"
+}

@@ -1,0 +1,44 @@
+{
+  "name": "xVault",
+  "version": "3.0.1",
+  "description": "xVault is an XRP wallet",
+  "main": "electron-start.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/bluedalmatian/xvault/core",
+  "keywords": [
+    "XRP",
+    "Ripple",
+    "Toast",
+    "Wallet"
+  ],
+  "author": "xVault Developers",
+  "license": "GPL 2.0",
+  "devDependencies": {
+    "electron": "1.6.2",
+    "electron-builder": "^19.19.1"
+  },
+  "build": {
+    "appId": "me.xvault.core",
+    "compression": "maximum",
+    "win": {
+      "target": "appx",
+      "icon": "www/res/electron/xvault.ico"
+    },
+    "appx": {
+      "backgroundColor": "#1565b1"
+    },
+    "linux": {
+      "target": "deb"
+    },
+    "mac": {
+      "icon": "www/res/icon/icon.icns"
+    }
+  },
+  "dependencies": {
+    "cordova-android-support-gradle-release": "^1.4.3",
+    "electron-debug": "^2.0.0",
+    "menu": "^0.2.5"
+  }
+}
