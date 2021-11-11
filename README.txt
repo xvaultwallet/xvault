@@ -58,7 +58,7 @@ Install node.js by downloading from nodejs.org
 From command line run:
 sudo npm install -g yarn
 cd <projdir>/browser
-sudo yarnpkg add electron-builder --dev
+sudo yarnpkg add electron-builder --dev --universal
 sudo npm install electron@15.0.0  (this installs electron v15 a version > 11 is needed for arm Macs)
 yarnpkg electron-builder --mac
 The exe is then in <projdir>/browser/dist/mac

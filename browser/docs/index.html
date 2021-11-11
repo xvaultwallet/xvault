@@ -27,8 +27,8 @@
 	<script>
 	//SET VERSION NUMBER HERE TO BE DISPLAYED AND USED THROUGHOUT APP
 	var xvaultmajorminorversion = 3.0; //must be float
-	var xvaultsubminorversion = 6; //must be int
-	var xvaultversionstring = xvaultmajorminorversion.toFixed(1)+"."+xvaultsubminorversion; //gives str in format eg "3.0.6"
+	var xvaultsubminorversion = 7; //must be int
+	var xvaultversionstring = xvaultmajorminorversion.toFixed(1)+"."+xvaultsubminorversion; //gives str in format eg "3.0.7"
 	
 	
 	
@@ -66,6 +66,9 @@
 	var endorsedtrustlines = [] //will hold EndorsedTrustLine objects
 	
 	endorsedtrustlines.push(new EndorsedTrustLine("rCSCManTZ8ME9EoLrSHHYKW8PPwWMgkwr","CSC",64999998787,"CasinoCoin (www.casinocoin.im)")); //CasinoCoin rCSCManTZ8ME9EoLrSHHYKW8PPwWMgkwr
+	endorsedtrustlines.push(new EndorsedTrustLine("rctArjqVvTHihekzDeecKo6mkTYTUSBNc","SGB",6361557,"Songbird")); //Songbird rctArjqVvTHihekzDeecKo6mkTYTUSBNc
+	endorsedtrustlines.push(new EndorsedTrustLine("rsoLo2S1kiGeCcn6hCUXVrCpGMWLrRrLZz","SOLO",399983537,"Sologenic (www.sologenic.com)")); //Solo rsoLo2S1kiGeCcn6hCUXVrCpGMWLrRrLZz
+	endorsedtrustlines.push(new EndorsedTrustLine("rKk7mu1dNB25fsPEJ4quoQd5B8QmaxewKi","CX1",24999997284,"ChorusX (www.chorusx.com)")); //ChorusX rKk7mu1dNB25fsPEJ4quoQd5B8QmaxewKi
 	
 	var latestLedger=0;
 	

@@ -111,8 +111,6 @@ mainWindow.on('did-finish-load', function () {
     protocol: PROTOCOL + ':',
     slashes: true
   }) + paylink);
-  // Open the DevTools.
-  //mainWindow.webContents.openDevTools();
   
   console.log("requested url");
 

@@ -1,6 +1,6 @@
 {
   "name": "xVault",
-  "version": "3.0.6",
+  "version": "3.0.7",
   "description": "xVault is an XRP wallet licensed under the GNU General Public License version 2.0",
   "main": "electron-start.js",
   "author": "xVault Developers",
@@ -8,7 +8,7 @@
   "homepage": "http://www.xVault.dev",
   "devDependencies": {
     "electron": "^15.0.0",
-    "electron-builder": "^22.11.7"
+    "electron-builder": "^22.13.1"
   },
   "build": {
     "appId": "xvault.dev",
